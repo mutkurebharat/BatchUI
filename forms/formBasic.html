@@ -3,8 +3,10 @@
 	<head>
 	</head>
 	<body>
-		<form method="get">
-			<label for="fName">First Name</label>
+		<form method="get" autocomplete="off">
+			<fieldset>
+			<legend>Personel Info Form: </legend>
+				<label for="fName">First Name</label>
 			<input name="a" id="fName" type="text" placeholder="e.g Bharat">
 			
 			<br><br><br>
@@ -18,10 +20,97 @@
 			
 			<br><br><br>
 			
+			<label>Select a gender</label>
+			<br><br>
+			<input type="radio" name="gender" id="male" value="Male">
+			<label for="male">Male</label>
+			
+			<input type="radio" name="gender" id="female" value="Femle">
+			<label for="female">Female</label>
+			
+			<input type="radio" name="gender" id="other" value="Other">
+			<label for="other">Other</label>
+			
+			
+			<br><br><br>
+			<label>Select Your Hobby</label>
+			<br><br>
+			
+			<input type="checkbox" name="cricket" id="cricket" value="Cricket">
+			<label for="cricket">Cricket</label>
+			<br>
+			
+			<input type="checkbox" name="chess" id="chess" value="chess">
+			<label for="chess">Chess</label>
+			<br>
+			
+			<input type="checkbox" name="cricket" id="cricket" value="Cricket">
+			<label for="reading">Reading</label>
+			<br>
+			
+			<input type="checkbox" name="singing" id="singing" value="singing">
+			<label for="singing">Singing</label>
+			<br>
+			
+			<input type="checkbox" name="dancing" id="dancing" value="dancing">
+			<label for="dancing">Dancing</label>
+			<br>
+			
+			<input type="checkbox" name="wws" id="wws" value="wws">
+			<label for="wws">Watching Web Series</label>
+			<br>
+			
+			<input type="checkbox" name="surfing" id="surfing" value="surfing">
+			<label for="surfing">Surfing</label>
+			
+			<br><br><br>
+			
+			<label for="state">Select Your State</label>
+			<select id="state" name="State">
+				<option value="">Select Your State</option>
+				<option value="Maharashtra">Maharashtra</option>
+				<option value="U.P">U.P.</option>
+				<option value="Bengal">Bengal</option>
+				<option value="M.P.">M.P.</option>
+				<option value="Gujrat">Gujrat</option>
+				<option value="Karnatak">Karnatak</option>
+				<option value="Tamilnadu">Tamilnadu</option>
+				<option value="Kerla">Kerla</option>
+				<option value="Goa">Goa</option>
+				<option value="Rajasthan" selected>Rajasthan</option>
+			</select>
+			
+			
+			<br><br><br>
+			
+			<label for="address">Write Your Address: </label>
+			<textarea name="address" id="address"rows="10" cols="25">
+			</textarea>
+			
+			
+			<br><br><br>
+			
+			<label for="states">Select Your State</label>
+			<input list="states">
+			<datalist id="states">
+				<option value="Maharashtra">
+				<option value="U.P">
+				<option value="Bengal">
+				<option value="M.P.">
+				<option value="Gujrat">
+				<option value="Karnatak">
+				<option value="Tamilnadu">
+				<option value="Kerla">
+				<option value="Goa">
+				<option value="Rajasthan">
+			</datalist>
 			<!-- <input type="submit"> -->
 			
-			
+			<br><br>
 			<button>Submit</button>
+			
+			
+			</fieldset>
 		</form>
 	</body>
 </html>
