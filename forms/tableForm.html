@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table,tr,td {
+				border: 1px solid black;
+				border-collapse:collapse;
+			}
+			
+			input{
+				border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<form>
+				<tr>
+					<td>First Name : </td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Last Name : </td>
+					<td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>Password : </td>
+					<td><input type="password"></td>
+				</tr>
+				<tr>
+					<td>State : </td>
+					<td>
+						<select id="state" name="State">
+						<option value="">Select Your State</option>
+						<option value="Maharashtra">Maharashtra</option>
+						<option value="U.P">U.P.</option>
+						<option value="Bengal">Bengal</option>
+						<option value="M.P.">M.P.</option>
+						<option value="Gujrat">Gujrat</option>
+						<option value="Karnatak">Karnatak</option>
+						<option value="Tamilnadu">Tamilnadu</option>
+						<option value="Kerla">Kerla</option>
+						<option value="Goa">Goa</option>
+						<option value="Rajasthan" selected>Rajasthan</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Gender : </td>
+					<td>
+						<input type="radio" name="gender" id="male" value="Male">
+						<label for="male">Male</label>
+						
+						<input type="radio" name="gender" id="female" value="Femle">
+						<label for="female">Female</label>
+						
+						<input type="radio" name="gender" id="other" value="Other">
+						<label for="other">Other</label>
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>
